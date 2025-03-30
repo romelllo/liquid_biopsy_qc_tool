@@ -1,0 +1,78 @@
+{
+    "meta": {
+        "config_version": "0.0.0"
+    },
+    "stages": {
+        "checks": [
+            {
+                "uid": "f104e31c-b3f5-4a4c-8f3f-4cb164f8e2ea",
+                "name": "average_coverage_v1/average_coverage_v2 ratio",
+                "params": {
+                    "threshold": 1.5
+                },
+                "failed_status": "warning",
+                "passed_status": "success",
+                "failed_message": "average_coverage_v1/average_coverage_v2 ratio is lower than 1.5; problems in sample biology or sample concentration for library preparation.",
+                "passed_message": "average_coverage_v1/average_coverage_v2 ratio is higher than 1.5; check passed."
+            },
+            {
+                "uid": "36ebebff-9f66-4278-8acd-1021081b0e73",
+                "name": "average_coverage_completeness_v1/v2",
+                "params": {
+                    "threshold": 60
+                },
+                "failed_status": "warning",
+                "passed_status": "success",
+                "failed_message": "lower than 60; sample coverage is uneven, calling sensitivity in individual genes may deteriorate.",
+                "passed_message": "average_coverage_completeness_v1 and average_coverage_completeness_v2 are higher than 60; check passed."
+            },
+            {
+                "uid": "03d48698-caf1-4f03-9960-8bc643edfdc6",
+                "name": "Total Deduplicated Percentage",
+                "params": {
+                    "threshold": 90
+                },
+                "failed_status": "warning",
+                "passed_status": "success",
+                "failed_message": "Total Deduplicated Percentage is above than 90; library of low complexity, little source material has been loaded.",
+                "passed_message": "Total Deduplicated Percentage is lower than 90; check passed."
+            },
+            {
+                "uid": "cf5a1b22-1cc7-458d-b8df-0820be40fb96",
+                "name": "Off-target",
+                "params": {
+                    "threshold": 30
+                },
+                "failed_status": "warning",
+                "passed_status": "success",
+                "failed_message": "Off-target is above than 30; washing went poorly.",
+                "passed_message": "Off-target is lower than 30; check passed."
+            },
+            {
+                "uid": "fdc7f9b6-9c4a-4301-a5fb-c0196e5ef969",
+                "name": "Number_of_Reads_mln",
+                "params": {
+                    "threshold": 200
+                },
+                "failed_status": "warning",
+                "passed_status": "success",
+                "failed_message": "Number_of_Reads_mln is lower than 200; the library is not completely sequenced",
+                "passed_message": "Number_of_Reads_mln is higher than 200; check passed."
+            }
+        ],
+        "estimations": [
+            {
+                "uid": "e9a5fe97-d7b9-4bb9-917d-1d5b6396236c",
+                "name": "Minimal VAF and LoD",
+                "completed_status": "success",
+                "skipped_status": "skipped",
+                "skipped_message": "Normal sample."
+            },
+            {
+                "uid": "1dbf8a3d-5b7b-42c3-bbb5-4b9f40823500",
+                "name": "Reads fraction with insert_size < 150 bp",
+                "completed_status": "success"
+            }
+        ]
+    }
+}
