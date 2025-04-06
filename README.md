@@ -26,6 +26,12 @@ This tool analyzes the following key metrics to determine sample quality:
 | Picard | Insert size | Fraction of reads with an insert size ≤150 bp | N/A | Qualitative assessment |
 | Overall Count | Total reads | Total read count in FASTQ files | < 200M | Insufficient library complexity |
 
+## Pipeline Overview
+
+The following diagram shows the main stages of the QC tool result generation pipeline:
+
+![QC Pipeline Diagram](assets/data_pipeline.png)
+
 ## Output
 
 The tool generates a structured JSON report containing:
