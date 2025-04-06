@@ -1,7 +1,7 @@
 # Liquid biopsy QC tool
 
 ## Overview
-This is a robust software tool developed as part of a Master's thesis titled "Analysis of Quality Control Data for Liquid Biopsy Samples Based on Cell-Free DNA Using NGS." The tool provides comprehensive quality control validation for liquid biopsy samples by implementing analytical quality control criteria (AQCC) tailored for cell-free DNA sequencing data.
+This is a robust software tool developed as part of a Master's thesis titled "Analysis of Quality Control Data for Liquid Biopsy Samples Based on Cell-Free DNA Using NGS". The tool provides comprehensive quality control validation for liquid biopsy samples by implementing analytical quality control criteria (AQCC) tailored for cell-free DNA sequencing data.
 
 The primary objective of the tool is to evaluate the quality of liquid biopsy samples by analyzing key metrics from NGS data and providing clear interpretation of sample suitability for downstream analysis, such as variant calling, copy number variation analysis, and gene expression profiling.
 
